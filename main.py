@@ -27,3 +27,14 @@ def main():
     display = '_'*length #This draws a line for us according to the length of word.
     already_guessed = [] #This would contain the string indices of the currently guessed word.
     play_game = ""
+
+# Now we create a loop to re-execute the game when the first round ends.
+def play_loop(): #This function takes argument to either continue the game after it is played once or end it according to what user suggest.
+    global play_game
+    while play_game not in ['Y','y','n','N']:
+        play_game = input("Do you want to play again?\n Y = yes   N = no")
+    if play_game == "y":
+        main()
+    elif play_game == "n":
+        print("Thanks for playing ! We expect you back again.")
+
