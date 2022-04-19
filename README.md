@@ -1,1 +1,1 @@
-# Hungama-Game
+# Hungman-Game
